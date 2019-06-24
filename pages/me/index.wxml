@@ -1,0 +1,21 @@
+
+<!--index.wxml-->
+<view class="container">
+      <view class="userinfo">
+          <block>
+            <view class="userinfo-portrait">
+                <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            </view>
+          </block>
+          <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="sign-btn" hidden="{{!userInfo.avatarUrl? false:true}}">点击获取头像</button>
+      </view>
+      <view class="my-list-tip">
+          <view class="my-collect my-list" bindtap="collectclick">我的收藏</view>
+          <view class="my-work my-list" bindtap="workupload">作品上传</view>
+          <view class="my-list" bindtap="choiceclick">选择分类</view>
+      </view>
+      <button open-type="contact" class="service-conversation">点击进入客服会话</button>
+      <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location ></map>
+</view>
+

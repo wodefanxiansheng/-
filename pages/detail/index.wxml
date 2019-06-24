@@ -1,0 +1,51 @@
+<view class="detail-wrap">
+    <view class="detail-wrap-text">
+        <view class="detail-title">《美食大冒险之英雄烩》同名大电影的艺术设定集 </view>
+        <view class="detail-time">{{time_describe}}</view>
+        <view class="nav-infor">
+            <view class="nav-infor-li">id : {{id}}</view>
+            <view class="nav-infor-li">uid : {{uid}}</view>
+            <view class="nav-infor-li">nickname : {{nickname}}</view>
+        </view>
+    </view>
+    <view class="imagelist">
+        <image src="{{item}}" data-src="{{item}}" class="detail-image" mode="widthFix" bindtap="previewImage" wx:for="{{datailList}}"></image>
+    </view>
+    
+    <view class="detail-content">
+        <text>主角是香喷喷的包子，反派是腌渍快消的章鱼，湖水是飘着油花的鸡汤，沼泽是一踩就碎的豆腐，溶洞是 Q 弹的果冻，山石是诱人的五花肉，，树木是西兰花和抹茶蛋糕，这是一本由森雨文化设计的超好“吃”的书。</text>
+        
+    </view>
+</view>
+<view class="line"></view>
+<view class="comments-s-wrap">
+    <view class="comments" wx:for="{{commentsarr}}" wx:key="id">
+        <image src="{{item.creatorObj.avatar}}" mode="aspectFill" class="header-logo"></image>
+        <view class="comments-right">
+            <view class="comments-right-zan">
+                <view class="comments-right-top">
+                    <text class="comments-right-top-name">{{item.creatorObj.username}}</text>
+                    <text class="comments-right-top-time">{{item.createTimeStr}}</text>
+                </view>
+                <view class="comments-right-logo">
+                    <image src="{{item.isMyPraise == 2 ? '../../images/huizanhover.png':'../../images/huizan.png'}}" data-src="../../images/huizan.png" data-index="{{index}}"class="fabulous-logo" bindtap="zanclick" data-id="{{item.id}}"></image>
+                    <text class="Fabulous-text">{{item.praiseCount}}</text>
+                </view>
+            </view>
+            <view class="comments-right-bottom">{{item.content}}</view>
+            <view class="c-comments-s" hidden="{{!item.originContent}}">
+                <i class="c-comments-s-i"></i>
+                <view class="c-comments-s-name">鹿晗</view>
+                <view class="c-comments-s-content">{{item.originContent}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="more_click" bindtap="moreClick">{{moreText}}</view>
+<view class="zan-comments-collect">
+    <input type="text" class="comments-fixed" placeholder="写评论..." disabled/>
+    <image class="article-zan" src="../../images/zan.png" mode="aspectFill"></image>
+    <image class="article-zan" src="../../images/collect.png" mode="aspectFill"></image>
+</view>
+
+

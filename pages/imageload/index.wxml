@@ -1,0 +1,22 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="imageload">
+        <input placeholder="请输入标题" name="input" class="imageTitle" placeholder-class="textarea-input" focus maxlength="16"/>
+        <view class="textarea-wrp">
+            <textarea  name="textarea" class="input-text textarea" maxlength="2000" placeholder="请输入作品说明" placeholder-class="textarea-input"/>
+        </view>
+    </view>
+    <view class="middle-text">
+        点击图片查看图片说明
+    </view>
+    <view class="imageload-wrap">
+            <view class="imagelist" wx:for="{{tempFilePathsArr}}" wx:key="id">
+                <image src="{{item}}" class="imagelist-image" bindtap="previewImage" mode="aspectFill"></image>
+            </view>
+            <view class="add-image" bindtap="imageload" hidden="{{addbool}}">
+                <image src="../../images/load.png" class="add"></image>
+            </view>
+    </view>
+    <view class="submit-group">
+        <button size="mini" class="submit" bindtap="submitclick" formType="submit">提交</button>
+    </view>
+</form>

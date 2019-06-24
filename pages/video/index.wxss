@@ -1,0 +1,77 @@
+/* pages/me/index.wxss */
+.poster{
+    width: 100%;
+}
+.swiper_list{
+    width: 100%;
+    height: 300rpx;
+    font-size:0;
+    display:flex;
+    flex-direction: row;
+    white-space:nowrap;
+}
+.listposter{
+    width: 300rpx;
+    height: 300rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 300rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.homeImage{
+    width: 300rpx;
+    height: 100%;  
+}
+.title{
+    font-size: 30rpx;
+    color: #fff;
+}
+.video-top{
+    text-align: center;
+    display: block;
+    margin:20rpx 0;
+    font-size:35rpx;
+    font-weight: bold;
+}
+.sucaiwrap{
+    display: flex;
+    white-space: nowrap;
+    padding:20rpx 0;
+    box-shadow: 2rpx 2rpx 4rpx #e3e3e3;
+}
+.sucailist{
+    font-size: 26rpx;
+    margin-left: 30rpx;
+    margin-right: 25rpx;
+    color:#8a8a8a;
+}
+.myVideo{
+    width: 100%;
+    height: 350rpx;
+    background-color: #eeeeee;
+}
+.video-content-wrap{
+    margin-top: 20rpx;
+    z-index: 1;
+}
+.add_color{
+    color: #00b38a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

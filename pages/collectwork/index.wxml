@@ -1,0 +1,20 @@
+
+<!--index.wxml-->
+<view class="container">
+    <view class="newly-build" bindtap="classification">
+        <image class="create-logo" src="../../images/create.png" mode="aspectFill"></image>
+        新建分类
+    </view>
+    <view>
+        <view class="collect-wrap" wx:for="{{collectList}}">
+            <view class="">
+                <image src="{{item.image}}" class="collect-image" mode="aspectFill" bindtap="collectdetail" data-id="{{item.id}}" data-title="{{item.name}}"></image>
+            </view>
+            <view class="collect-text">
+                <text>{{item.name}}</text>
+                <text class="sucainum">素材数 {{item.media_num}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+

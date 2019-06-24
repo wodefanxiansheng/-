@@ -1,0 +1,40 @@
+
+<view class="videowrap">
+    <view class="video-contens">
+        <view class="video-container">
+            <template is="video-type" data="{{danmuList,videosrc}}" wx:if="{{videosrc}}"/>
+            <template is="image-type" data="{{imagesrc}}" wx:else/>
+        </view>
+        <view class="video-intro">
+            <text class="video-title">{{videotitle}}</text>
+            <view class="video-image-wrap">
+                <button open-type="share" class="video-share video-image-list"></button>
+                <image src="" class="video-collect video-image-list"></image>
+            </view>
+        </view>
+        <view class="video-content">{{videotext}}</view> 
+        <image src="../../images/pic_business.jpg" mode="widthFix" class="video-bg"></image>
+        <view class="video-keyword">
+            <text class="keyword" wx:for="{{wordlist}}">{{item}}</text>
+        </view>
+        <view class="recommendations-wrap">
+            <view class="recommendations-title">相关推荐</view>  
+            <scroll-view scroll-x  class="recommendations">
+                <image  mode="aspectFill" src="{{item.image}}" class="homeImage-video" wx:for="{{tuijianArr}}" data-ids="{{item.id}}" bindtap="videodetail"></image>
+            </scroll-view> 
+        </view>
+    </view>
+    <view class="barrage" wx:if="{{videosrc}}">
+        <input bindblur="bindInputBlur" cursor-spacing="15" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+        <button bindtap="bindSendDanmu" class="page-body-button">发送</button>
+    </view>
+</view>
+<template name="video-type">
+    <video class="myVideo" id="myVideo" objectFit="cover" src="{{videosrc}}"  danmu-list="{{danmuList}}"  autoplay="true" enable-danmu danmu-btn controls></video>
+</template>
+<template name="image-type">
+    <image src="{{imagesrc}}" class="myImage" mode="aspectFill"></image>
+</template>
+
+
+

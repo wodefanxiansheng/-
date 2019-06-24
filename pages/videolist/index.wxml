@@ -1,0 +1,5 @@
+<view class="videowrap">
+    <view wx:for="{{videomediapack}}">
+        <image src="{{item.media_data.image}}" mode="widthFix" class="videolists" bindtap="videodetail" data-id="{{item.media_data.id}}"></image>
+    </view>
+</view>

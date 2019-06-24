@@ -1,0 +1,9 @@
+<view class="choice-wrap">
+    <view class="listgroup">
+        <text wx:for="{{choicelist}}" class="choicelist {{item.bool?'addColor':''}}" data-bool="{{item.bool}}" data-id="{{item.id}}" bindtap="choiceClick" data-index="{{index}}">{{item.text}}</text>
+    </view>
+    <view class="btn-wrap">
+        <button class="sublit-btn" size="mini" type="default" bindtap="submitClick">提交</button>
+    </view>
+</view>
+

@@ -1,0 +1,5 @@
+<view class="collect-title">{{detailTitle}}</view>
+<view class="list-wrap">
+    <image src="{{item.image}}" wx:for="{{collectArr}}" mode="aspectFill" data-id="{{item.id}}" class="list" bindtap = "collectClick"></image>
+</view>
+

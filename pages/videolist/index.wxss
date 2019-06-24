@@ -1,0 +1,23 @@
+/* pages/me/index.wxss */
+.videowrap{
+    font-size: 0;
+}
+.videolists{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

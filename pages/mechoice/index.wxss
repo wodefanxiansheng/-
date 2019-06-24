@@ -1,0 +1,29 @@
+.addColor{
+  border-color: #21856d !important;
+  color: #fff !important;
+  background-color: #00b38a !important;
+}
+.listgroup{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.choicelist{
+  width: 20%;
+  padding:15rpx 20rpx;
+  border:1rpx solid #9c9c9c;
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-size: 25rpx;
+  border-radius: 9rpx;
+  color: #888888;
+}
+.choice-wrap{
+  width: 90%;
+  margin:30rpx auto;
+}
+.btn-wrap{
+  display: flex;
+  justify-content: center;
+}
+

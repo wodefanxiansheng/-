@@ -1,0 +1,61 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/find/index",
+        "pages/me/index",
+        "pages/detail/index",
+        "pages/search/index",
+        "pages/video/index",
+        "pages/videolist/index",
+        "pages/videoplay/index",
+        "pages/collectwork/index",
+        "template/new-classification/index",
+        "pages/collectdetail/index",
+        "pages/mechoice/index",
+        "pages/imageload/index"
+    ],
+    "window": {
+        "navigationBarTitleText": "大作设计网",
+        "backgroundTextStyle": "dark",  
+        "navigationBarBackgroundColor": "#fff",   
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f0f1f3"
+    },
+    "tabBar": {
+        "color": "#dadada",  
+        "selectedColor": "#000",  
+        "backgroundColor":"#fff",  
+        "borderStyle": "#f6f6f6",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath":"images/home.png",
+                "selectedIconPath":"images/select_home.png"
+            },
+            {
+                "pagePath": "pages/find/index",
+                "text": "发现",
+                "iconPath":"images/find.png",
+                "selectedIconPath":"images/select_find.png"
+            },
+            {
+                "pagePath": "pages/video/index",
+                "text":"视频",
+                "iconPath":"images/video.png",
+                "selectedIconPath":"images/select_video.png"
+            },
+            {
+                "pagePath": "pages/me/index",
+                "text":"我",
+                "iconPath":"images/me.png",
+                "selectedIconPath":"images/select_me.png"
+            }
+            
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    }
+}

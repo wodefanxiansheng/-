@@ -1,0 +1,143 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxf70444da6c7138c9",
+	"projectname": "%E5%A4%A7%E4%BD%9C%E8%AE%BE%E8%AE%A1%E7%BD%91",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 16,
+			"list": [
+				{
+					"id": 0,
+					"name": "详情",
+					"pathName": "pages/detail/index",
+					"query": "id=154924"
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索页",
+					"pathName": "pages/search/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频",
+					"pathName": "pages/video/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "视频列表",
+					"pathName": "pages/videolist/index",
+					"query": "id=65"
+				},
+				{
+					"id": -1,
+					"name": "我",
+					"pathName": "pages/me/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频播放界面",
+					"pathName": "pages/videoplay/index",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "66666",
+					"pathName": "pages/videoplay/index",
+					"query": "id=80139382"
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/collectwork/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "创建分类",
+					"pathName": "template/new-classification/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/collectwork/index",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "收藏详情",
+					"pathName": "pages/collectdetail/index",
+					"query": "id=3937"
+				},
+				{
+					"id": -1,
+					"name": "新建分类页面",
+					"pathName": "template/new-classification/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收藏详情",
+					"pathName": "pages/collectdetail/index",
+					"query": "id=3937"
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/find/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选择分类",
+					"pathName": "pages/mechoice/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "图片视频上传",
+					"pathName": "pages/imageload/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

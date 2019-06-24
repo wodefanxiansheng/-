@@ -1,0 +1,23 @@
+<view class="video-header-wrap">
+    <view>
+        <image src="../../images/banner.jpg"  mode="widthFix" class="poster"></image>
+    </view>
+    <view>
+        <scroll-view scroll-x  class="swiper_list" bindtap="listdetail">
+            <view  class="listposter" wx:for="{{videoList}}" style="background-image:url({{item.image}})" data-id="{{item.id}}" bindtap="videodetailclick">
+                <text class="title">{{item.name}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <view>
+        <view class="video-top">顶尖视频素材搜索</view>
+        <view class="sucaiwrap">
+            <scroll-view scroll-x  class="">
+                <text class="sucailist {{currentText == item?'add_color':''}}" wx:for="{{material}}" bindtap="materiallistclick" data-text="{{item}}" data-index="{{index}}">{{item}}</text> 
+            </scroll-view>
+        </view>
+    </view>
+</view>
+<view class="video-content-wrap">
+    <video class="myVideo" id="myVideo" wx:for="{{topvideoArr}}" objectFit="cover" src="{{item.preview}}"  bindplay="videoplay"  controls id="{{item.id}}"></video>
+</view>

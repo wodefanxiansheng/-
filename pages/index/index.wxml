@@ -1,0 +1,36 @@
+<view class="rushi-home">
+    <view class="lunbotu">
+        <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#2cc996">
+            <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+              <swiper-item>
+                <image src="{{item}}" data-src="{{item}}" class="slide-image"  mode="aspectFill" class="lunbotu_image" bindtap="previewImage"/>
+              </swiper-item>
+            </block>
+          </swiper>
+        <view class="homeSearch">
+            <view class="yuming">dazuo.com</view>
+            <view class="search-grounp" bindtap="searchPage">
+                <input type="text" placeholder="搜索你喜欢的..."   class="search" placeholder-style="color:#B8B8B8" disabled />
+            </view>
+        </view>
+    </view>
+    <view class="rushi-home-list" wx:for="{{contentlist}}" wx:key="{{index}}">
+        <scroll-view scroll-x  class="swiper_list" bindtap="listdetail" data-id="{{item.works_id}}" data-uid="{{item.uid}}" data-nickname="{{item.nickname}}" data-time="{{item.time_describe}}">
+            <image  src="{{item.src}}" class="homeImage"  lazy-load="true" wx:for="{{item.content_pic}}" mode="aspectFill" wx:key="{{index}}"></image>
+        </scroll-view>
+        <view class="infor-top">
+            <text class="infor-top-left">{{item.title}}</text>
+            <text class="infor-top-right">{{item.time_describe}}</text>
+        </view>
+        <view class="infor-bottom">
+            <view class="infor-bottom-left">
+                <image src="{{item.user_pic}}" class="logo" mode="aspectFill"></image>
+                <text class="nickName">{{item.nickname}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="loading" hidden="{{isHideLoadMore}}">正在加载中...</view>
+    <view class="loading complete" hidden="{{loadingComplete}}">已加载全部</view>
+</view>
+
