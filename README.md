@@ -1,6 +1,6 @@
 # weixin
 微信小程序(大作设计网)
-![image](https://github.com/wodefanxiansheng/weixin/upload/master/imgIntro/1b3cc02ab57f994e29c35660c267200.png)
+![image](https://github.com/wodefanxiansheng/blog/blob/master/imgIntro/1b3cc02ab57f994e29c35660c267200.png)
 ![image](https://github.com/wodefanxiansheng/weixin/upload/master/imgIntro/1f9f7cf5bcbce98f4f3ab446fe46485.png)
 ![image](https://github.com/wodefanxiansheng/weixin/upload/master/imgIntro/7bf244891763355f2641130f16be699.png)
 ![image](https://github.com/wodefanxiansheng/weixin/upload/master/imgIntro/83b3c16f29bb59d9e2b46f53cee798e.png)
