@@ -13,6 +13,7 @@
 ![image](https://github.com/wodefanxiansheng/weixin/blob/master/imgIntro/d2377c7f8e2d9cb707e8f18a3ee71e9.png)
 ![image](https://github.com/wodefanxiansheng/weixin/blob/master/imgIntro/db616233758627667cbda01fe363ef4.png)
 ![image](https://github.com/wodefanxiansheng/weixin/blob/master/imgIntro/f7c7f3d17b5ed2ae81c721a7aff08e6.png)
+</div>
 
 
 
